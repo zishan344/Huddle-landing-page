@@ -47,14 +47,15 @@
 
 .hero-title {
   font-family: "Poppins", sans-serif;
+  font-size: 2rem;
   text-align: center;
 }
 .hero-para {
   margin: auto;
   width: 500px;
-  max-width: 100;
+  max-width: 100%;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   margin-top: 30px;
 }
@@ -73,4 +74,11 @@
   font-size: 1rem;
   cursor: pointer;
   box-shadow: -3px -1px 43px -10px rgba(0, 0, 0, 0.72);
+}
+
+.section-two {
+  margin-top: 90px;
+}
+.img-section img {
+  width: 100%;
 }
