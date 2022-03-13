@@ -13,6 +13,7 @@
   max-width: 100%;
 }
 .container {
+  padding: 0px 5px;
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
@@ -78,7 +79,10 @@
   cursor: pointer;
   box-shadow: -3px -1px 43px -10px rgba(0, 0, 0, 0.72);
 }
-
+.img-section {
+  display: flex;
+  justify-content: center;
+}
 .section-two {
   margin-top: 90px;
 }
@@ -106,27 +110,118 @@
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
 }
-.section-4 {
-  background-image: url(./images/bg-section-bottom-desktop-2.svg);
+.bg {
+  background-image: url(./images/bg-section-top-mobile-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.grow-content h2 {
+.grow {
+  padding: 80px 0px;
+  margin-top: 100px;
+}
+.contant-heading h2 {
   font-family: "Poppins", sans-serif;
 }
-.grow-contant p {
+.contant-heading p {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: hsl(192, 100%, 9%);
   font-size: 1rem;
 }
 .content {
-  width: 450px;
-  max-width: 100%;
+  /* width: 500px;
+  max-width: 100% !important; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
 }
 .left-side-l {
   flex: 1;
 }
 .right-side-r {
   flex: 1;
+}
+
+/* footer section */
+footer {
+  margin-top: 100px;
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+}
+section.container.footer-content.item-flex {
+  padding: 10px;
+}
+.icon {
+  color: white;
+  font-size: 1rem;
+}
+.phone,
+.email {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 100px;
+}
+.footer-left-top p {
+  width: 50%;
+}
+.footer-right-bottom h2 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+.footer-right-bottom p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form input {
+  border: 2px solid hsl(321, 100%, 78%);
+  outline: none;
+  color: hsl(192deg 75% 8%);
+  font-weight: bold;
+  padding: 0.313rem 0.625rem;
+  border-radius: 0.375rem;
+  margin-bottom: 0.625rem;
+}
+
+.form button {
+  padding: 7px 13px;
+  background: hsl(322, 100%, 66%);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+/* media query */
+@media screen and (max-width: 650px) {
+  .item-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 456px) {
+  /* .item-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } */
+  .footer-left-top p {
+    width: 100%;
+  }
 }
